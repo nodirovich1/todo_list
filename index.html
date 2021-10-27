@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+<div class="container">
+    <div class="todo">
+        <h1 class="todo-text">Todo List</h1>
+        <div class="todo-add">
+            <form>
+                <input name='task' type="text" placeholder="Type name of task" autocomplete="off" required>
+                <button class="todo-button" type="submit">Add</button>
+            </form>
+        </div>
+        <div class="todo-table">
+            <div class="todo-results">
+                <div class="todo-result is-hidden">
+                    <h1 class="title">Watching TV</h1>
+                    <button onclick="deleteTask(this.dataset.id)" id="delete">Delete</button>
+                    <button onclick="editTodo(this.dataset.id)" id="edit">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
